@@ -1,8 +1,9 @@
 
-
+Мене на могилі
 
 Серед степу широкого
 
+<<<<<<< HEAD
 
 
 
@@ -13,3 +14,14 @@
 Серед степу широкого
 Na vkraini miliy
 
+=======
+Na vkraini miliy
+Shob lani shirokopoli
+I Dnipro i kruchi
+
+Кайдани порвіте
+Серед степу широкого
+Na vkraini miliy
+
+Волю окропіте.
+>>>>>>> 923aaed519847df0652bc33c0720b0a3838d5b50
