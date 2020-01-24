@@ -2,12 +2,15 @@
 
 
 Серед степу широкого
-<<<<<<< HEAD
 Na vkraini miliy
 Shob lani shirokopoli
 I Dnipro i kruchi
-=======
+Було видно, було чути,
+Як реве ревучий
+
+
+
+
 Кайдани порвіте
-Серед степу широкого
-Na vkraini miliy
->>>>>>> ec1e86605b487bb0e1dc873cdef7062f459f515c
+
+
