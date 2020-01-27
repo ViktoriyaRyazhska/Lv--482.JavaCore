@@ -5,10 +5,6 @@ import java.io.InputStreamReader;
 
 public class task3 {
 
-	/**
-	 * @param args
-	 * @throws IOException 
-	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 				
@@ -16,21 +12,15 @@ public class task3 {
 		
 		System.out.println("Enter the three different standard units:");
 		
-		String a = reader.readLine();
-		String b = reader.readLine();
-		String c = reader.readLine();
-		double c1 = Double.parseDouble(a);
-		double c2 = Double.parseDouble(b);
-		double c3 = Double.parseDouble(c);
+		double c1 = Double.parseDouble(reader.readLine());
+		double c2 = Double.parseDouble(reader.readLine());
+		double c3 = Double.parseDouble(reader.readLine());
 		
 		System.out.println("Enter the three different times of call (in minutes):");
 		
-		String d = reader.readLine();
-		String e = reader.readLine();
-		String f = reader.readLine();
-		double t1 = Double.parseDouble(d);
-		double t2 = Double.parseDouble(e);
-		double t3 = Double.parseDouble(f);
+		double t1 = Double.parseDouble(reader.readLine());
+		double t2 = Double.parseDouble(reader.readLine());
+		double t3 = Double.parseDouble(reader.readLine());
 		
 		double pay1 = c1*t1;
 		double pay2 = c2*t2;

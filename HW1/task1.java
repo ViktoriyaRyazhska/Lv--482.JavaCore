@@ -9,7 +9,6 @@ public class task1 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 	
-	double pi = 3.14;
 	double perimeter;
 	double area;
 	
@@ -19,8 +18,8 @@ public class task1 {
 	String s = reader.readLine();
 	double radius = Double.parseDouble(s);
 	
-	perimeter = 2*pi*radius;
-	area = pi*(radius*radius);
+	perimeter = 2*Math.PI*radius;
+	area = Math.PI*(radius*radius);
 	
 	System.out.println("The perimeter of flower bed is: " + perimeter);
 	System.out.println("The area of flower bed is: " + area);
