@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class Hwp1 {
 	public static void main(String[] args) throws IOException {
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		while (true){
 		double radious,perimeter,area;
 		int c;
-		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Please enter radious");
 		radious=Double.parseDouble(br.readLine());
 		System.out.println("enter '1' to calculate the perimeter  or '2' to calculate the area or '3' to calculate perimeter and radious");
@@ -17,15 +17,18 @@ public class Hwp1 {
 		if(c==1) {
 			perimeter=2*Math.PI*radious;
 			System.out.println("radious is:"+perimeter+"\n");
+			break;
 		}
 		else if(c==2) {
 			area=Math.PI*Math.pow(radious,2);
 			System.out.println("area is:"+area+"\n");
+			break;
 		}
 		else if(c==3) {
 			perimeter=2*Math.PI*radious;
 			area=Math.PI*Math.pow(radious,2);
 			System.out.println("area is:"+area+"\n"+"perimeter is:"+perimeter+"\n");
+			break;
 		}
 		else {
 			System.out.println("Try again");
