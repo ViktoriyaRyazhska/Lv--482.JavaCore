@@ -43,6 +43,12 @@ public class main {
 		p5.changeName("Andriy", "replace");
 		p5.Output();
 		
+		Person p6=new Person("Oleg","Sam");
+		p6.setBirthyear(2000);
+		p6.secondInput();
+		p6.Output();
+		
+		
 	}
 
 }

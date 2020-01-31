@@ -1,9 +1,17 @@
 package SecondHW;
 
+import java.time.LocalDate;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+
 public class Person {
 	private String firstName;
 	private String lastName;
 	private int birthYear;
+	
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	
 	public void SetfirstName(String firstName) {
 		this.firstName=firstName;
@@ -53,6 +61,13 @@ public class Person {
 		this.birthYear=birthYear;
 	}
 	
+	public void secondInput() throws IOException {
+		System.out.println("Please enter info about person");
+		this.firstName=br.readLine();
+		this.lastName=br.readLine();
+		this.birthYear=Integer.parseInt(br.readLine());
+	}
+	
 	public void Output() {
 		
 		System.out.print("\n" + this.firstName + "\n" + this.lastName + "\n" + this.birthYear + "\n");
@@ -60,9 +75,7 @@ public class Person {
 	}
 	
 	public int getAge(int birthDate) {
-		int temp=2020;
-		birthDate=temp-birthDate;
-		return birthDate;
+		return LocalDate.now().getYear()-birthDate;
 	}
 	
 	public void changeName(String firstName,String lastName) {
