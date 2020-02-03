@@ -1,5 +1,8 @@
 package lab3;
 
-public enum continent {
-Europe,Asia,Afrika,Australia,North_Amerika,South_Amerika,
+
+public enum Continent {
+
+    Europe,Asia,Afrika,Australia,North_Amerika,South_Amerika;
+
 }
