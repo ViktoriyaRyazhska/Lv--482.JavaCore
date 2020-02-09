@@ -11,11 +11,12 @@ public class task4_3_1 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter five numbers:");
-		array[0] = Integer.parseInt(sc.nextLine());
-		array[1] = Integer.parseInt(sc.nextLine());
-		array[2] = Integer.parseInt(sc.nextLine());
-		array[3] = Integer.parseInt(sc.nextLine());
-		array[4] = Integer.parseInt(sc.nextLine());
+		for (int i=0; i <5; i++) {
+			array[i] = Integer.parseInt(sc.nextLine());
+			}
+		/*
+		   
+		 */
 		
 			if ((array[0] > 0) && (array[1] > 0)) {
 			 position = 1; 

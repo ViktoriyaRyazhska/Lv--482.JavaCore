@@ -84,11 +84,11 @@ public class Car {
 	
 	public void input(BufferedReader reader) throws IOException {
 		System.out.println("Enter the type (model) of car:");
-		String a = reader.readLine();
+		type = reader.readLine();
 		System.out.println("Enter the year of car production:");
-		int b = Integer.parseInt(reader.readLine());
+		yearOfProduction = Integer.parseInt(reader.readLine());
 		System.out.println("Enter the engine capacity of car:");
-		double c = Double.parseDouble(reader.readLine());
+		engineCapacity = Double.parseDouble(reader.readLine());
 	}
 	
 	public void output() {
@@ -118,13 +118,11 @@ public class Car {
 	
 	System.out.println("Enter the year:");
 	int d = Integer.parseInt(reader.readLine());
-	for (int i = 0; i < cars[i].getYearOfProduction(); i++) {
+	for (int i = 0; i < cars.length; i++) {
 		if (d == cars[i].getYearOfProduction()) {
 			cars[i].output();
 		}
-				else {
-					System.out.println("There are not models produced this year");
+
 				}
-	}
 	}
 }
