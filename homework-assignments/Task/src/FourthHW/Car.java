@@ -35,7 +35,7 @@ public class Car {
 			}
 		}
 		for (int i = 0; i < c.length; i++) {
-			System.out.println("Sorted biggest is : " + c[i]);
+			System.out.println(" Sorted biggest is : " + c[i]);
 		}
 
 	}
