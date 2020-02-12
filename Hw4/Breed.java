@@ -1,5 +1,5 @@
 package Hw4;
 
 public enum Breed {
-	Labrador, Shepherds, Bulldogs, Rottweilers, Terriers
+	labrador, shepherds, rulldogs, rottweilers, terriers
 }
