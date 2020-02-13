@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="250.75" y="79.0">dz3.NonFlyingBird</node>
+    <node x="115.0" y="158.0">dz3.Eagle</node>
+    <node x="216.0" y="158.0">dz3.Penguin</node>
+    <node x="171.625" y="0.0">dz3.Bird</node>
+    <node x="331.0" y="158.0">dz3.Chiken</node>
+    <node x="0.0" y="158.0">dz3.Swallow</node>
+    <node x="43.5" y="79.0">dz3.FlyingBird</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="dz3.Swallow" target="dz3.FlyingBird">
+      <point x="0.0" y="-14.5" />
+      <point x="47.5" y="133.0" />
+      <point x="72.5" y="133.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="dz3.Chiken" target="dz3.NonFlyingBird">
+      <point x="0.0" y="-14.5" />
+      <point x="375.0" y="133.0" />
+      <point x="353.5" y="133.0" />
+      <point x="34.25" y="14.5" />
+    </edge>
+    <edge source="dz3.FlyingBird" target="dz3.Bird">
+      <point x="0.0" y="-14.5" />
+      <point x="101.5" y="54.0" />
+      <point x="190.125" y="54.0" />
+      <point x="-18.5" y="14.5" />
+    </edge>
+    <edge source="dz3.NonFlyingBird" target="dz3.Bird">
+      <point x="0.0" y="-14.5" />
+      <point x="319.25" y="54.0" />
+      <point x="227.125" y="54.0" />
+      <point x="18.5" y="14.5" />
+    </edge>
+    <edge source="dz3.Penguin" target="dz3.NonFlyingBird">
+      <point x="0.0" y="-14.5" />
+      <point x="263.5" y="133.0" />
+      <point x="285.0" y="133.0" />
+      <point x="-34.25" y="14.5" />
+    </edge>
+    <edge source="dz3.Eagle" target="dz3.FlyingBird">
+      <point x="0.0" y="-14.5" />
+      <point x="155.5" y="133.0" />
+      <point x="130.5" y="133.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="582.0" y="15.0" />
+  <SelectedNodes>
+    <node>dz3.NonFlyingBird</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
