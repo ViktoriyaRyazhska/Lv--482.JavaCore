@@ -11,14 +11,17 @@ public class task4_2 {
 		int product = 1;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the ten numbers:");
+		boolean b = true;
 		for (int i = 0; i < array.length; i++) {
 			array[i] = Integer.parseInt(sc.nextLine());
-				if (array[i] > 0) {
-				sum = array[0] + array[1] + array[2] + array[3] + array[4];
-			}
-				else {
-				product = product * array[5] * array[6] * array[7] * array[8] * array[9];
-					}	
+			if (array[i] > 0 && i < 5 && b) {
+				sum = sum + array[i];
+	} else {
+	b = false;
+	}
+				if (b == false && i >= 5) {
+					product = product * array[i];
+					} 
 		}
 						
 		System.out.println("Sum = " + sum);
