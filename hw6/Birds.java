@@ -9,7 +9,6 @@ public class Birds {
 		birds[2] = new Penguin();
 		birds[3] = new Chicken();
 		for (int i = 0; i < birds.length; i++) {
-			
 			System.out.println(birds[i].fly());
 		} 
 	}
