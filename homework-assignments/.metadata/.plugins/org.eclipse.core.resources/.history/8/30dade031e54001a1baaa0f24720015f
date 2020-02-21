@@ -1,0 +1,39 @@
+package SeventhHW;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class Student implements Comparable<Student> {
+	private String name;
+	private int course;
+
+	Student(String name, int course) {
+		this.name = name;
+		this.course = course;
+	}
+
+	public void printStudents(List student,int course) {
+		Iterator it =student.iterator();
+		while(it.hasNext()) {
+			
+			
+		}
+	}
+	
+	@Override
+	public int compareTo(Student st) {
+		return this.course-st.course;
+	}
+	
+	
+//	@Override
+//	public int compareTo(Student st) {
+//		return name.compareTo(st.name);
+//	}
+	
+	@Override
+	public String toString() {
+		return "name is : " + this.name + "course is : " + this.course;
+	}
+	
+}

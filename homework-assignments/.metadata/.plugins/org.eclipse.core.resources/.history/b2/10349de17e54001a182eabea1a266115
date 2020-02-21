@@ -1,0 +1,40 @@
+package SeventhHW;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class Appl {
+	public static void main(String[] args){
+		List<Student> list = new ArrayList<>();
+		list.add(new Student("Ivan",7));
+		list.add(new Student("Petro",1));
+		list.add(new Student("Oleg",2));
+		list.add(new Student("Orest",3));
+		list.add(new Student ("Andriy",4));
+	
+		for(Object obj : list) {
+			System.out.println(obj + "\n");
+		}
+			
+		
+		Student tmp = new Student();
+		tmp.printStudents(list, 1);
+		
+		Iterator it = list.iterator();
+		
+		list.sort(new Comparablecourse());
+		
+	for(Object obj : list) {
+		System.out.println(obj + "\n");
+	}
+		
+	
+	for(Object obj : list) {
+		System.out.println(obj);
+	}
+	
+	
+	}
+}

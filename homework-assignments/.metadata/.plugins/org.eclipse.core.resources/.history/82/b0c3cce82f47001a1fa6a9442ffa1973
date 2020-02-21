@@ -1,0 +1,5 @@
+package ThirdHW;
+
+public enum Breed {
+	Tacsa;
+}

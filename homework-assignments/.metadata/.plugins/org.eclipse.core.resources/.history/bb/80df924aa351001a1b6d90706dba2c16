@@ -1,0 +1,46 @@
+package fifthHWpart2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class SalariedEmployee extends Employee implements Calculate {
+
+	private String socialSecurityNumber;
+	private String name;
+	private String surname;
+	private double hourlyrate;
+	private double numberofhoursworked;
+	private double salary;
+
+	SalariedEmployee() {
+		this.socialSecurityNumber = " ";
+		this.name = " ";
+		this.surname = " ";
+		this.hourlyrate = 0.0;
+		this.numberofhoursworked = 0.0;
+		this.salary = 0.0;
+	}
+
+	@Override
+	public void calculatePay() {
+		this.salary = this.hourlyrate * this.numberofhoursworked;
+	}
+
+	public void input(BufferedReader br) throws IOException {
+
+		System.out.println("\n Please enter socialSecurityNumber : ");
+		this.socialSecurityNumber = br.readLine();
+		System.out.println("\n Please enter name : ");
+		this.name = br.readLine();
+
+		this.surname = br.readLine();
+
+		this.hourlyrate = Integer.parseInt(br.readLine());
+
+		this.numberofhoursworked = Integer.parseInt(br.readLine());
+
+	}
+	
+	
+
+}
