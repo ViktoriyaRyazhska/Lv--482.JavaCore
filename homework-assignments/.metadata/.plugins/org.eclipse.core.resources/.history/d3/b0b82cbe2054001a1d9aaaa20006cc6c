@@ -1,0 +1,37 @@
+package SeventhHW;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Appl {
+	public static void main(String[] args){
+		List<Student> list = new ArrayList<>();
+		//Student[] st = new Student[5];
+		
+//		st[0]=new Student("Ivan",1);
+//		st[1]=new Student("Petro",1);
+//		st[2]=new Student("Oleg",2);
+//		st[3]=new Student("Orest",3);
+//		st[4]=new Student ("Petro",4);
+		
+		
+		list.add(new Student("Ivan",1));
+		list.add(new Student("Petro",1));
+		list.add(new Student("Oleg",2));
+		list.add(new Student("Orest",3));
+		list.add(new Student ("Petro",4));
+		
+		Iterator it = list.iterator();
+		
+//		for(Object obj:list) {
+//			System.out.println(obj);
+//		}
+		
+	
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+	}
+}

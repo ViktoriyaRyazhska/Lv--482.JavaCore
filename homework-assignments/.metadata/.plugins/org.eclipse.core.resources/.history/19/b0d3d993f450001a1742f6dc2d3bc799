@@ -1,0 +1,13 @@
+package fifthHW;
+
+public abstract class Bird {
+	public void feathers() {
+		
+	}
+	
+	public void layEggs() {
+		
+	}
+	
+	public abstract void fly();
+}

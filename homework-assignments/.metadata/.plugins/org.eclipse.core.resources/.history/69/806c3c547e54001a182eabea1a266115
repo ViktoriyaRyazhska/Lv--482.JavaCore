@@ -1,0 +1,8 @@
+package SeventhHW;
+
+public class Comparablename extends Student implements Comparable<Student> {
+	@Override
+	public int compareTo(Student st) {
+		return this.getName().compareTo(st.getName());
+	}
+}

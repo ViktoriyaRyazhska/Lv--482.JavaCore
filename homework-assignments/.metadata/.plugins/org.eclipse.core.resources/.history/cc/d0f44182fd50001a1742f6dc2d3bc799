@@ -1,0 +1,7 @@
+package fifthHWpart2;
+
+public class Runnerpart2 {
+	Employee e = new SalariedEmployee();
+	
+	
+}

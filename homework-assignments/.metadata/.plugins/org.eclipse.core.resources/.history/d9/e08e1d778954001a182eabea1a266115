@@ -1,0 +1,38 @@
+package SeventhHW;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class SecondAppl {
+	public static void main(String[] args) {
+		Map<String,String> personMap = new HashMap<>();
+		
+		personMap.put("Petrov", "Andriy");
+		personMap.put("Mahdziack", "Orest");
+		personMap.put("Mahdziack", "Orest");
+		personMap.put("Lomov", "Volodia");
+		personMap.put("San", "Petro");
+		
+		Iterator it = personMap.entrySet().iterator();
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		
+		while(it.hasNext()) {
+			String value = (String) personMap.get(it.next());
+			if(value==(String) it.next()) {
+				System.out.println("Same names");
+			}
+		}
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+	}	
+	
+	
+}

@@ -1,0 +1,15 @@
+package fifthHWpart2;
+
+public abstract class Employee {
+	protected int employeeid;
+
+	Employee() {
+		this.employeeid++;
+		
+	}
+
+	public void test() {
+		System.out.println("Test");
+	}
+
+}

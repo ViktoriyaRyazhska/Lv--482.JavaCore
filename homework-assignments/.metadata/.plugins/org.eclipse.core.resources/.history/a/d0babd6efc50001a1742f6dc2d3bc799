@@ -1,0 +1,11 @@
+package fifthHWpart2;
+
+public class SalariedEmployee extends Employee implements Calculate {
+
+	@Override
+	public void calculatePay() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

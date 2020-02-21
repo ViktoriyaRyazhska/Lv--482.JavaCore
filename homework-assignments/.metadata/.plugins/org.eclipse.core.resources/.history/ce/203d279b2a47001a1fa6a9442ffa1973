@@ -1,0 +1,65 @@
+package ThirdHW;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Dog {
+	private String name;
+	private String breed;
+	private int age;
+	
+	public Dog() {
+		
+	}
+	public Dog(String name,String breed,int age) {
+		this.name=name;
+		this.breed=breed;
+		this.age=age;
+	}
+	
+	public void SetName(String name) {
+		this.name=name;
+	}
+	
+	public void SetBreed(String breed) {
+		this.breed=breed;
+	}
+	
+	public void SetAge(int age) {
+		this.age=age;
+	}
+	
+	public String GetName() {
+		return this.name;
+	}
+	
+	public String GetBreed() {
+		return this.breed;
+	}
+	
+	public int GetAge() {
+		return this.age;
+	}
+	
+	public void Input(BufferedReader br) throws IOException {
+		this.name=br.readLine();
+		this.breed=br.readLine();
+		this.age=Integer.parseInt(br.readLine());
+
+	}
+
+	public Dog olddog(Dog d) {
+		return this.age>d.age ? this : d;
+		
+	}
+	
+	public boolean sameName(Dog d) {
+		return this.name.equals(d.name);
+	}
+	
+	@Override
+	public String toString() {
+		return this.name + this.breed + this.age;
+	}
+}

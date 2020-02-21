@@ -1,0 +1,5 @@
+package fifthHW;
+
+public class Swallow extends FlyingBird {
+
+}

@@ -1,0 +1,14 @@
+package fifthHWpart2;
+
+public class Runnerpart2 {
+	public static void main(String[] args) {
+	Employee e = new SalariedEmployee();
+	
+	SalariedEmployee e1 = new SalariedEmployee();
+	
+	e=e1;
+	
+	
+	}
+	
+}
