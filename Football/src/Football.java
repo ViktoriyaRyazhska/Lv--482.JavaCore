@@ -1,4 +1,7 @@
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Football {
 	
@@ -18,16 +21,22 @@ public class Football {
 		championsLeague.addMatchToMatchbase(new Match("2019/20", "Group stage", "C", "Atalanta", "Dinamo Zagreb", 2, 0));
 		championsLeague.addMatchToMatchbase(new Match("2019/20", "Group stage", "C", "Shakhtar Donetsk", "Atalanta", 0, 3));
 		championsLeague.addMatchToMatchbase(new Match("2019/20", "Group stage", "C", "Dinamo Zagreb", "Manchester City", 1, 4));
-	}	
+	}
+	
+	public void addlGamesOfOneGroup(){
+		championsLeague.getOneGroup(reader);
+	}
 
 	public void printAllGames(){
 		championsLeague.infoAboutAllGames();
 	}
 	
 	public static void main(String[] args) {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		Football football = new Football();
 		football.addAllGames();
 		football.printAllGames();
+		football.addlGamesOfOneGroup();
 	}
 
 }
