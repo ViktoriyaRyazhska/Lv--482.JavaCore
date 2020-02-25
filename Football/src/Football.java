@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class Football {
 		championsLeague.addMatchToMatchbase(new Match("2019/20", "Group stage", "C", "Dinamo Zagreb", "Manchester City", 1, 4));
 	}
 	
-	public void addlGamesOfOneGroup(){
+	public void addGamesOfOneGroup(BufferedReader reader) throws IOException{
 		championsLeague.getOneGroup(reader);
 	}
 
@@ -31,12 +32,22 @@ public class Football {
 		championsLeague.infoAboutAllGames();
 	}
 	
+	public void printGamesInOneGroup() {
+		championsLeague.infoAboutGamesInOneGroup();
+	}
+	
 	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		Football football = new Football();
 		football.addAllGames();
 		football.printAllGames();
-		football.addlGamesOfOneGroup();
+			try {
+				football.addGamesOfOneGroup(reader);
+			} catch (IOException e) {
+				System.out.println("Error!");
+			e.printStackTrace();
+		}
+		football.printGamesInOneGroup();
 	}
 
 }
