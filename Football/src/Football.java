@@ -41,6 +41,7 @@ public class Football {
 		Football football = new Football();
 		football.addAllGames();
 		football.printAllGames();
+<<<<<<< HEAD
 			try {
 				football.addGamesOfOneGroup(reader);
 			} catch (IOException e) {
@@ -48,6 +49,14 @@ public class Football {
 			e.printStackTrace();
 		}
 		football.printGamesInOneGroup();
+=======
+		try {
+			football.addGamesOfOneGroup(reader);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+>>>>>>> 085a8dc1cfd83a79a8a93721e679d8d116504f38
 	}
 
 }
