@@ -7,7 +7,8 @@ import java.util.List;
 public class Football {
 	
 	Matchbase championsLeague = new Matchbase();
-	
+	List<TeamResult> table = new ArrayList();
+		
 	public void addAllGames(BufferedReader reader) throws IOException{
 		System.out.println("Enter the season: ");
 		String season = reader.readLine();
@@ -42,7 +43,16 @@ public class Football {
 	public void addGamesOfOneGroup(BufferedReader reader) throws IOException{
 		championsLeague.getOneGroup(reader);
 	}
-
+	
+	public List<TeamResult> calculateTable(List<Match> groupChoice) {
+		for (int i = 0; i < groupChoice.size(); i++) {
+			if (!groupChoice.contains(groupChoice.get(i).getHomeTeam()) || (!groupChoice.contains(groupChoice.get(i).getAwayTeam()))) {
+				table.add(groupChoice.get(i).getHomeTeam());
+			}
+		}
+		return table;
+	}
+	
 	public void printAllGames(){
 		championsLeague.infoAboutAllGames();
 	}
