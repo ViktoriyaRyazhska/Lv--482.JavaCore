@@ -21,8 +21,8 @@ public class Main {
 				// Task3.execute();
 				break;
 			case 4:
-				// some info
-				// Task4.execute();
+				//Prints a number of loud numbers
+				Task4.execute("My test text");
 				break;
 			case 5:
 				// some info
@@ -33,8 +33,8 @@ public class Main {
 				//Task6.execute();
 				break;
 			case 7:
-				// some info
-				//Task7.execute();
+				//Prints factorial
+				Task7.execute(5);
 				break;
 			case 8:
 				// some info
@@ -53,8 +53,8 @@ public class Main {
 				//Task11.execute();
 				break;
 			case 12:
-				// some info
-				//Task12.execute();
+				//Prints the sum of all the multiples of 3 or 5 below 100
+				Task12.execute(100);
 				break;
 			case 13:
 				// some info
