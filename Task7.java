@@ -1,7 +1,14 @@
 package edu5;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Task7 {
-	public static void execute(int number) {
+	public static void execute() throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Input number to factorialize");
+		int number = Integer.parseInt(br.readLine());
 		if (number < 0) {
 			
 		}
