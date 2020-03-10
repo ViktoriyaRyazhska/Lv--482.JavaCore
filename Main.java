@@ -10,7 +10,7 @@ public class Main {
 			int value = Integer.parseInt(br.readLine());
 			switch (value) {
 			case 1:
-				// Task1.execute();
+				Task1.execute();
 				break;
 			case 2:
 				// some info
