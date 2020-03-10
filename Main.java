@@ -22,7 +22,7 @@ public class Main {
 				break;
 			case 4:
 				//Prints a number of loud numbers
-				Task4.execute("My test text");
+				Task4.execute();
 				break;
 			case 5:
 				// some info
@@ -34,7 +34,7 @@ public class Main {
 				break;
 			case 7:
 				//Prints factorial
-				Task7.execute(5);
+				Task7.execute();
 				break;
 			case 8:
 				// some info
@@ -54,7 +54,7 @@ public class Main {
 				break;
 			case 12:
 				//Prints the sum of all the multiples of 3 or 5 below 100
-				Task12.execute(100);
+				Task12.execute();
 				break;
 			case 13:
 				// some info
