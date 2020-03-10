@@ -18,7 +18,7 @@ public class Main {
 				break;
 			case 3:
 				// some info
-				// Task3.execute();
+				Task3.execute();
 				break;
 			case 4:
 				//Prints a number of loud numbers
@@ -37,8 +37,8 @@ public class Main {
 				Task7.execute();
 				break;
 			case 8:
-				// some info
-				Task8.execute();
+				System.out.println("Input number n ");
+				Task8.execute(Integer.parseInt(String.valueOf(br.read())));
 				break;
 			case 9:
 				// some info
