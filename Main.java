@@ -38,7 +38,7 @@ public class Main {
 				break;
 			case 8:
 				// some info
-				//Task8.execute();
+				Task8.execute();
 				break;
 			case 9:
 				// some info
