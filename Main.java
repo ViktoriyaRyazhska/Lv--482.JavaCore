@@ -18,7 +18,7 @@ public class Main {
 				break;
 			case 3:
 				// some info
-				// Task3.execute();
+				Task3.execute();
 				break;
 			case 4:
 				//Prints a number of loud numbers
