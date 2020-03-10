@@ -37,8 +37,8 @@ public class Main {
 				Task7.execute(5);
 				break;
 			case 8:
-				// some info
-				Task8.execute();
+				System.out.println("Input number n ");
+				Task8.execute(Integer.parseInt(String.valueOf(br.read())));
 				break;
 			case 9:
 				// some info
