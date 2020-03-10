@@ -26,7 +26,7 @@ public class Main {
 				break;
 			case 5:
 				// some info
-				// Task5.execute();
+				Task5.execute();
 				break;
 			case 6:
 				// some info
